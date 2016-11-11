@@ -1,0 +1,234 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Programming/Coding Assignment
+% LaTeX Template
+%
+% This template has been downloaded from:
+% http://www.latextemplates.com
+%
+% Original author:
+% Ted Pavlic (http://www.tedpavlic.com)
+%
+% Note:
+% The \lipsum[#] commands throughout this template generate dummy text
+% to fill the template out. These commands should all be removed when 
+% writing assignment content.
+%
+% This template uses a Perl script as an example snippet of code, most other
+% languages are also usable. Configure them in the "CODE INCLUSION 
+% CONFIGURATION" section.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{article}
+
+\usepackage{fancyhdr} % Required for custom headers
+\usepackage{lastpage} % Required to determine the last page for the footer
+\usepackage{extramarks} % Required for headers and footers
+\usepackage[usenames,dvipsnames]{color} % Required for custom colors
+\usepackage{graphicx} % Required to insert images
+\usepackage{listings} % Required for insertion of code
+\usepackage{courier} % Required for the courier font
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage{xcolor}
+%\usepackage{displaymath}
+
+% Margins
+\topmargin=-0.45in
+\evensidemargin=0in
+\oddsidemargin=0in
+\textwidth=6.5in
+\textheight=9.0in
+\headsep=0.25in
+
+\linespread{1.1} % Line spacing
+
+% Set up the header and footer
+\pagestyle{fancy}
+\lhead{\hmwkLastNames} % Top left header
+\chead{\hmwkClass\ (\hmwkClassInstructor\ \hmwkClassTime): \hmwkTitle} % Top center head
+\rhead{\firstxmark} % Top right header
+\lfoot{\lastxmark} % Bottom left footer
+\cfoot{} % Bottom center footer
+\rfoot{Page\ \thepage\ of\ \protect\pageref{LastPage}} % Bottom right footer
+\renewcommand\headrulewidth{0.4pt} % Size of the header rule
+\renewcommand\footrulewidth{0.4pt} % Size of the footer rule
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+%----------------------------------------------------------------------------------------
+%	CODE INCLUSION CONFIGURATION
+%----------------------------------------------------------------------------------------
+
+\definecolor{MyDarkGreen}{rgb}{0.0,0.4,0.0} % This is the color used for comments
+
+\lstset{language=C,
+                basicstyle=\ttfamily,
+                frame=single,
+                showstringspaces=false,
+                keywordstyle=\color{blue}\ttfamily,
+                stringstyle=\color{red}\ttfamily,
+                commentstyle=\color{green}\ttfamily,
+                morecomment=[l][\color{magenta}]{\#}
+}
+
+%\lstset{language={[x86masm]Assembler},frame=single,basicstyle=\footnotesize\ttfamily,commentstyle=\itshape\color{MyDarkGreen},showstringspaces=false,stringstyle=\color{orange}, identifierstyle=\color{blue}}
+
+% Creates a new command to include a perl script, the first parameter is the filename of the script (without .pl), the second parameter is the caption
+\newcommand{\insertcode}[2]{
+\begin{itemize}
+\item[]\lstinputlisting[caption=#2,label=#1]{#1.c}
+\end{itemize}
+}
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT STRUCTURE COMMANDS
+%	Skip this unless you know what you're doing
+%----------------------------------------------------------------------------------------
+
+% Header and footer for when a page split occurs within a problem environment
+\newcommand{\enterProblemHeader}[1]{
+\nobreak\extramarks{#1}{#1 continued on next page\ldots}\nobreak
+\nobreak\extramarks{#1 (continued)}{#1 continued on next page\ldots}\nobreak
+}
+
+% Header and footer for when a page split occurs between problem environments
+\newcommand{\exitProblemHeader}[1]{
+\nobreak\extramarks{#1 (continued)}{#1 continued on next page\ldots}\nobreak
+\nobreak\extramarks{#1}{}\nobreak
+}
+
+\setcounter{secnumdepth}{0} % Removes default section numbers
+\newcounter{homeworkProblemCounter} % Creates a counter to keep track of the number of problems
+
+\newcommand{\homeworkProblemName}{}
+\newenvironment{homeworkProblem}[1][Problem \arabic{homeworkProblemCounter}]{ % Makes a new environment called homeworkProblem which takes 1 argument (custom name) but the default is "Problem #"
+\stepcounter{homeworkProblemCounter} % Increase counter for number of problems
+\renewcommand{\homeworkProblemName}{#1} % Assign \homeworkProblemName the name of the problem
+\section{\homeworkProblemName} % Make a section in the document with the custom problem count
+\enterProblemHeader{\homeworkProblemName} % Header and footer within the environment
+}{
+\exitProblemHeader{\homeworkProblemName} % Header and footer after the environment
+}
+
+\newcommand{\problemAnswer}[1]{ % Defines the problem answer command with the content as the only argument
+\noindent\framebox[\columnwidth][c]{\begin{minipage}{0.98\columnwidth}#1\end{minipage}} % Makes the box around the problem answer and puts the content inside
+}
+
+\newcommand{\homeworkSectionName}{}
+\newenvironment{homeworkSection}[1]{ % New environment for sections within homework problems, takes 1 argument - the name of the section
+\renewcommand{\homeworkSectionName}{#1} % Assign \homeworkSectionName to the name of the section from the environment argument
+\subsection{\homeworkSectionName} % Make a subsection with the custom name of the subsection
+\enterProblemHeader{\homeworkProblemName\ [\homeworkSectionName]} % Header and footer within the environment
+}{
+\enterProblemHeader{\homeworkProblemName} % Header and footer after the environment
+}
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CLASS SECTION
+%----------------------------------------------------------------------------------------
+
+\newcommand{\hmwkTitle}{Assignment\ \#3} % Assignment title
+\newcommand{\hmwkDueDate}{Monday,\ November\ 14,\ 2016} % Due date
+\newcommand{\hmwkClass}{CPSCI\ 351} % Course/class
+\newcommand{\hmwkClassTime}{7:00pm} % Class/lecture time
+\newcommand{\hmwkClassInstructor}{Huy} % Teacher/lecturer
+\newcommand{\hmwkAuthorName}{Christopher Grant, Jimi Vandermost} % Your name
+\newcommand{\hmwkLastNames}{Grant, Vandermost}
+\newcommand{\lastCWID}{3726}
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title{
+\vspace{2in}
+\textmd{\textbf{\hmwkClass:\ \hmwkTitle}}\\
+\normalsize\vspace{0.1in}\small{\hmwkDueDate}\\
+\vspace{0.1in}\large{\textit{\hmwkClassInstructor\ \hmwkClassTime}}
+\vspace{3in}
+}
+
+\author{\textbf{\hmwkAuthorName}\\\textbf{\lastCWID}}
+\date{} % Insert date here if you want it to appear below your name
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\maketitle
+
+%----------------------------------------------------------------------------------------
+%	TABLE OF CONTENTS
+%----------------------------------------------------------------------------------------
+
+%\setcounter{tocdepth}{1} % Uncomment this line if you don't want subsections listed in the ToC
+
+\newpage
+\tableofcontents
+\newpage
+
+%----------------------------------------------------------------------------------------
+%	Description
+%----------------------------------------------------------------------------------------
+
+\section {Problem Statement}
+
+
+
+
+\clearpage
+
+
+
+%----------------------------------------------------------------------------------------
+%   Design Description	
+%----------------------------------------------------------------------------------------
+
+\section{Design Description}
+
+\clearpage
+
+%----------------------------------------------------------------------------------------
+%  Library Listing 
+%----------------------------------------------------------------------------------------
+
+\section{Linux and C Libary Function Listing}
+\begin{itemize}
+    \item stdio.h
+    \item time.h
+    \item stdlib.h
+    \item pthreads.h
+\end{itemize}
+\clearpage
+
+%----------------------------------------------------------------------------------------
+%	Code
+%----------------------------------------------------------------------------------------
+
+% To have just one problem per page, simply put a \clearpage after each problem
+
+\section{Code}
+\insertcode{main}{Matrix Multiplication of nxn matrices using p\_threads}
+\clearpage
+
+%---------------------------------------------------------------------------------------
+%	Screenshots
+%---------------------------------------------------------------------------------------
+
+\section{Screenshot}
+\begin{center}
+%\includegraphics[width=.85\columnwidth]{} % Example image
+\end{center}
+\clearpage
+
+
+%----------------------------------------------------------------------------------------
+%	Conclusion
+%----------------------------------------------------------------------------------------
+
+\section{Conclusion}
+What we learned in this assignment is that our professor is a complete fucking joke
+\end{document}
