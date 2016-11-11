@@ -10,9 +10,22 @@
     Date: November 15, 2016
 */
 
-
 #include "stdio.h"
 #include "stdlib.h"
+
+void printArray(int ** array, int n)
+{
+    for(int i = 0; i < n; i++)
+    {
+        for(int j = 0; j < n; j++)
+        {
+            printf("%d ", array[i][j]);
+        }
+        printf("\n");
+    }
+}
+
+
 
 int main()
 {
@@ -24,7 +37,7 @@ int main()
     scanf("%d", &n);
 
     // generate a random integer array with given dimension
-    // malloc will have to be used, using an array 
+    // malloc will have to be used, using a 2d array 
         
 
     // multiply the arrays
