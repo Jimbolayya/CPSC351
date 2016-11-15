@@ -142,6 +142,9 @@ int main()
     print_matrix(matrix_b, dim_var);
     printf("Resultant Matrix AB: \n");
     print_matrix(matrix_r, dim_var);
+
+
+    // trace
     return 0;
 }
 
