@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2016.10.17)  14 NOV 2016 18:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2016.10.17)  14 NOV 2016 19:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -140,8 +140,7 @@ File: lstlang1.sty 2015/06/04 1.6 listings language file
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 )
 \c@homeworkProblemCounter=\count97
-
-No file assignment_2.aux.
+ (./assignment_2.aux)
 \openout1 = `assignment_2.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 159.
@@ -159,6 +158,7 @@ LaTeX Font Info:    ... okay on input line 159.
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
 (lastpage)             ! on input line 159.
+
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count98
@@ -230,18 +230,15 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 161.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-No file assignment_2.toc.
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./assignment_2.toc)
 \tf@toc=\write3
 \openout3 = `assignment_2.toc'.
 
-
-LaTeX Warning: Reference `LastPage' on page 2 undefined on input line 171.
-
-[2]
+ [2]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 180.
 
- (/usr/share/texmf-dist/tex/latex/base/omscmr.fd
+
+(/usr/share/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
@@ -250,36 +247,21 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 181.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 181.
-
-
-LaTeX Warning: Reference `LastPage' on page 3 undefined on input line 184.
-
-[3]
+ [3]
 Underfull \hbox (badness 10000) in paragraph at lines 200--201
 
  []
 
-
-LaTeX Warning: Reference `LastPage' on page 4 undefined on input line 203.
-
 [4
 
-]
-
-LaTeX Warning: Reference `LastPage' on page 5 undefined on input line 215.
-
-[5
+] [5
 
 ]
 LaTeX Font Info:    Try loading font information for OT1+pcr on input line 224.
 
  (/usr/share/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-) (./main.c
-
-LaTeX Warning: Reference `LastPage' on page 6 undefined on input line 48.
-
-[6
+) (./main.c [6
 
 ]
 Overfull \hbox (29.24986pt too wide) in paragraph at lines 88--89
@@ -288,67 +270,35 @@ Overfull \hbox (29.24986pt too wide) in paragraph at lines 88--89
 [][][][][][][][] 
  []
 
-
-LaTeX Warning: Reference `LastPage' on page 7 undefined on input line 97.
-
 [7]
 Overfull \hbox (101.2506pt too wide) in paragraph at lines 118--119
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
+[8] [9]) [10] [11
 
-LaTeX Warning: Reference `LastPage' on page 8 undefined on input line 146.
-
-[8]
-
-LaTeX Warning: Reference `LastPage' on page 9 undefined on input line 195.
-
-[9])
-
-LaTeX Warning: Reference `LastPage' on page 10 undefined on input line 225.
-
-[10]
-
-LaTeX Warning: Reference `LastPage' on page 11 undefined on input line 235.
-
-[11
-
-]
-
-Package lastpage Warning: Rerun to get the references right on input line 244.
-
-
+] 
 AED: lastpage setting LastPage
-
-LaTeX Warning: Reference `LastPage' on page 12 undefined on input line 244.
-
 [12
 
-] (./assignment_2.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+] (./assignment_2.aux) ) 
 Here is how much of TeX's memory you used:
- 4065 strings out of 493013
- 56338 string characters out of 6139316
+ 4069 strings out of 493013
+ 56406 string characters out of 6139316
  277347 words of memory out of 5000000
  7555 multiletter control sequences out of 15000+600000
  9363 words of font info for 33 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,12n,49p,252b,1677s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></us
-r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/type1/urw/courier/u
-crr8a.pfb>
-Output written on assignment_2.pdf (12 pages, 110186 bytes).
+ 40i,12n,49p,252b,1664s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</us
+r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pf
+b></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fon
+ts/type1/urw/courier/ucrr8a.pfb>
+Output written on assignment_2.pdf (12 pages, 116274 bytes).
 PDF statistics:
  76 PDF objects out of 1000 (max. 8388607)
  53 compressed objects within 1 object stream

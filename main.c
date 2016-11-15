@@ -50,8 +50,14 @@ int main()
     // ask user for matrix dimension and num threads
     printf("Hello, what size matrices would you like? (nxn) ");
     scanf("%d", &dim_var);
-    printf("How many threads should this program use? ");
+    printf("How many threads should this program use? (note: must be larger than the dimension)");
     scanf("%d", &threads_var);
+    
+    while(threads_var <= dim_var)
+    {
+        printf("Number of threads must be larger than the dimension, enter again ");
+        scanf("%d", &threads_var);
+    }
        
     srand48(time(NULL)); // seed rand with time
 
