@@ -138,7 +138,7 @@
 \newcommand{\hmwkClassInstructor}{Huy} % Teacher/lecturer
 \newcommand{\hmwkAuthorName}{Christopher Grant, Jimi Vandermost} % Your name
 \newcommand{\hmwkLastNames}{Grant, Vandermost}
-\newcommand{\lastCWID}{3726}
+\newcommand{\lastCWID}{3726,6915}
 %----------------------------------------------------------------------------------------
 %	TITLE PAGE
 %----------------------------------------------------------------------------------------
@@ -176,9 +176,11 @@
 
 \section {Problem Statement}
 
-
-
-
+\begin{itemize}
+\item The problem that this program solves is that of multiplying large dimensioned matrices
+of randomly assigned doubles (\(0 <  x <  1 \) exclusive).
+\item The problem also includes trace calculation of the resultant matrix.
+\end{itemize}
 \clearpage
 
 
@@ -188,7 +190,16 @@
 %----------------------------------------------------------------------------------------
 
 \section{Design Description}
+\begin{itemize}
+\item Asks the user for dimension and number of threads to use.
+\item Executes with multiple threads, given by the number given by the user.
+\item Computes the trace of the resultant (product) matrix on a single thread
+\item Prints the two randomly assigned matrices, resultant matrix, and the trace of the matrix to the user.
+\end{itemize}
 
+\textbf{\Large{Detailed explanation of how the workers and product function work:}}\\
+
+Hi Jimi
 \clearpage
 
 %----------------------------------------------------------------------------------------
