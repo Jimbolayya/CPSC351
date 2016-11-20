@@ -40,6 +40,7 @@ typedef struct {
 
 int main()
 {
+    int determinantA, determinantB;
     int dim_var, threads_var, rem_thread_var, rem_dim_var;
     int thread_array[threads_var];
     double **matrix_a, **matrix_b, **matrix_r;
@@ -150,7 +151,16 @@ int main()
     print_matrix(matrix_r, dim_var);
 
 
-    // trace
+    // Determinant for Dim == 2
+    if (dim == 2)
+    {
+        determinantA = (matrix_a[1][1] * matrix_a[2][2]) - (matrix_a[1][2] * matrix_a[2][1]);
+        printf("The determinant for Matrix A is: %d \n", determinantA);
+        
+        determinantB = (matrix_b[1][1] * matrix_b[2][2]) - (matrix_b[1][2] * matrix_b[2][1]);
+        printf("The determinant for Matrix B is: %d \n", determinantA);
+    }
+    
     return 0;
 }
 
